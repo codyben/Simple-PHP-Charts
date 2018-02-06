@@ -46,4 +46,6 @@ $colorOptions = array
 	'colorDataPoints' => imagecolorallocate($im, 0,128,0) //green
 
 );
-createChart($im, $colorOptions, $dataPointsX,$dataPointsY, $dataRange, $gridLines, $chartSize, $tickMarks);
+
+$imageName = 'Simple PHP Chart.png'; //Optional, default is just chart.png
+createChart($im, $colorOptions, $dataPointsX,$dataPointsY, $dataRange, $gridLines, $chartSize, $tickMarks, $imageName);

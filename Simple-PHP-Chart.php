@@ -2,7 +2,7 @@
 //Basic PHP Charts
 //Like, really basic
 
-function createChart($im, Array $colorOptions, Array $dataPointsX, Array $dataPointsY, Array $dataRange, bool $gridLines, Array $chartSize, bool $tickMarks)
+function createChart($im, Array $colorOptions, Array $dataPointsX, Array $dataPointsY, Array $dataRange, bool $gridLines, Array $chartSize, bool $tickMarks, String $imageName = 'chart.png')
 {
 	//extract color options from array :]
 	extract($colorOptions);
@@ -69,7 +69,8 @@ function createChart($im, Array $colorOptions, Array $dataPointsX, Array $dataPo
 			$z++;
 		}
 	}
-	Header('Content-type: image/jpeg');
+	Header('Content-type: image/png');
+	Header('Content-Disposition: inline; filename="'.$imageName.'"');
 	return imagepng($im);
 	//free up memory and exit script
 	imagedestroy($im);
