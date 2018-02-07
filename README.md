@@ -1,3 +1,4 @@
+
 # Simple PHP Charts
 
 Ever just needed to generate a chart on the fly? 
@@ -34,8 +35,11 @@ Feeling _really_ minimalistic?
 ```	'colorGraphBackground' => imagecolorallocate($im, 255, 255, 0), //black```
 	```'colorDataPoints' => imagecolorallocate($im, 0,128,0) //green```
 ```);```
+- Set Image Name (optional; default is 'chart.png')
+--`$imageName = 'some string.png';` 
 - Create Chart (finally _whew!_): 
-- - ```createChart($im, $colorOptions, $dataPointsX,$dataPointsY, $dataRange, $gridLines, $chartSize, $tickMarks);```
+- - ```createChart($im, $colorOptions, $dataPointsX,$dataPointsY, $dataRange, $gridLines, $chartSize, $tickMarks, $imageName);```
+
 # Example
 - View **example_chart.png** in the repo.
 
