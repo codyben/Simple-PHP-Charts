@@ -1,0 +1,14 @@
+{
+    "name": "codyben/simple-php-charts",
+    "description": "Pure PHP chart generator",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Cody Benkoski",
+            "email": "cob322@lehigh.edu"
+        }
+    ],
+    "require": {
+	     "php": "^7.2"	
+	}
+}
